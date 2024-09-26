@@ -42,6 +42,8 @@ for i in {1..10}; do curl -k --resolve api.news.io:443:$INGRESS_IP -H "Authoriza
 for i in {1..10}; do curl -k --resolve api.news.io:443:$INGRESS_IP -H "Authorization: Bearer $(kubectl create token niko)" https://api.news.io/economy && sleep 1; done
 ```
 
+#### ❻ [Deploy the consumer app](6-consumer.md)
+
 <br/>
 
 #### [Cleanup](README.md#cleanup)
