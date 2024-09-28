@@ -6,7 +6,7 @@
 #### ❷ [Setup a gateway](2-gateway.md) ☑️
 #### ❸ [Enable security capabilities for the gateways](3-kuadrant.md) ☑️
 #### ❹ [Add authentication and authorization to the application](4-auth.md) ☑️
-#### ❺ [Add rate limiting to the application](5-rate-limit.md)
+#### ❺ [Add rate limiting to the application](5-rate-limit.md) ☑️
 #### ❻ Deploy the consumer app
 
 Deploy an application that tries to consume the News Agency API within the cluster at every 3 seconds:
