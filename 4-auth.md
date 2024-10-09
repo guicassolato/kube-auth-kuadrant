@@ -189,4 +189,4 @@ curl -k --resolve api.news.io:443:$INGRESS_IP -H "Authorization: Bearer $(kubect
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)

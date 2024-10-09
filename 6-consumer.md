@@ -86,4 +86,4 @@ kubectl logs -f app-consumer -n consumer
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)

@@ -46,4 +46,4 @@ for i in {1..10}; do curl -k --resolve api.news.io:443:$INGRESS_IP -H "Authoriza
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)
