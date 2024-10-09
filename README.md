@@ -27,6 +27,7 @@ Demo tutorial of protecting a service application with Kubernetes Auth and Rate 
 - [Helm](https://helm.sh/)
 - [curl](https://curl.se)
 - [yq](https://github.com/mikefarah/yq)
+- [Docker Mac Net Connect](https://github.com/chipmk/docker-mac-net-connect) or [Podman Mac Net Connect](https://github.com/jasonmadigan/podman-mac-net-connect) (macOS only)
 
 ## Run the steps
 
