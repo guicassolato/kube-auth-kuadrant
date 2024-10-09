@@ -107,4 +107,4 @@ curl --resolve api.news.io:443:$INGRESS_IP https://api.news.io/sports --insecure
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)

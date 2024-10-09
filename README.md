@@ -40,10 +40,4 @@ Demo tutorial of protecting a service application with Kubernetes Auth and Rate 
 
 <br/>
 
-#### Cleanup
-
-Delete the cluster:
-
-```sh
-kind delete cluster --name kuadrant-demo
-```
+#### [Cleanup](cleanup.md)

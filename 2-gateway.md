@@ -125,4 +125,4 @@ curl --resolve api.news.io:80:$INGRESS_IP http://api.news.io/sports
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)

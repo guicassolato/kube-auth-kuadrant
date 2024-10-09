@@ -78,4 +78,4 @@ curl http://localhost:3000/sports
 
 <br/>
 
-#### [Cleanup](README.md#cleanup)
+#### [Cleanup](cleanup.md)
