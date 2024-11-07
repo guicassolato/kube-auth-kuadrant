@@ -14,40 +14,27 @@ kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/downloa
 Install the Istio Gateway Controller:
 
 ```sh
-curl -sL https://istio.io/downloadIstio | ISTIO_VERSION=1.23.2 sh -
-istio-1.23.2/bin/istioctl operator init --operatorNamespace istio-system
+helm install sail-operator \
+		--create-namespace \
+		--namespace istio-system \
+		--wait \
+		--timeout=300s \
+		https://github.com/istio-ecosystem/sail-operator/releases/download/0.1.0/sail-operator-0.1.0.tgz
+	kubectl apply -f $(ISTIO_INSTALL_DIR)/sail/istio.yaml
 
 kubectl apply -f -<<EOF
-apiVersion: install.istio.io/v1alpha1
-kind: IstioOperator
+apiVersion: sailoperator.io/v1alpha1
+kind: Istio
 metadata:
-  namespace: istio-system
-  name: istiocontrolplane
+  name: default
 spec:
-  profile: default
+  # Supported values for sail-operator v0.1.0 are [v1.22.4,v1.23.0]
+  version: v1.23.0
   namespace: istio-system
-  components:
-    base:
-      enabled: true
-    cni:
-      enabled: false
-    egressGateways:
-      - enabled: false
-        name: istio-egressgateway
-    ingressGateways:
-      - enabled: false
-        name: istio-ingressgateway
-    pilot:
-      enabled: true
-      k8s:
-        resources:
-          requests:
-            cpu: "0"
+  # Disable autoscaling to reduce dev resources
   values:
     pilot:
       autoscaleEnabled: false
-    global:
-      istioNamespace: istio-system
 EOF
 ```
 
