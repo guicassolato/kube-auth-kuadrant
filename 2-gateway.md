@@ -20,7 +20,6 @@ helm install sail-operator \
 		--wait \
 		--timeout=300s \
 		https://github.com/istio-ecosystem/sail-operator/releases/download/0.1.0/sail-operator-0.1.0.tgz
-	kubectl apply -f $(ISTIO_INSTALL_DIR)/sail/istio.yaml
 
 kubectl apply -f -<<EOF
 apiVersion: sailoperator.io/v1alpha1
