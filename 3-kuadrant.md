@@ -22,7 +22,11 @@ Install Kuadrant:
 
 ```sh
 helm repo add kuadrant https://kuadrant.io/helm-charts/ --force-update
-helm install kuadrant-operator kuadrant/kuadrant-operator --devel
+helm install \
+ kuadrant-operator kuadrant/kuadrant-operator \
+ --create-namespace \
+ --namespace kuadrant-system \
+ --devel
 ```
 
 ```sh
