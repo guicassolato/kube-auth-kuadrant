@@ -11,7 +11,7 @@ Create an AuthPolicy:
 
 ```sh
 kubectl apply -f -<<EOF
-apiVersion: kuadrant.io/v1beta2
+apiVersion: kuadrant.io/v1
 kind: AuthPolicy
 metadata:
   name: news-api-auth

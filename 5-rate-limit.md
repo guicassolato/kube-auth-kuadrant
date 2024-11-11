@@ -12,7 +12,7 @@ Create a RateLimitPolicy:
 
 ```sh
 kubectl apply -f - <<EOF
-apiVersion: kuadrant.io/v1beta2
+apiVersion: kuadrant.io/v1
 kind: RateLimitPolicy
 metadata:
   name: news-api-rate-limit
@@ -25,10 +25,9 @@ spec:
     global:
       rates:
       - limit: 2
-        duration: 10
-        unit: second
+        window: 10s
       counters:
-      - request.path
+      - expression: request.path
 EOF
 ```
 

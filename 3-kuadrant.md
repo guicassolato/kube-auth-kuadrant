@@ -71,7 +71,7 @@ metadata:
 spec:
   selfSigned: {}
 ---
-apiVersion: kuadrant.io/v1alpha1
+apiVersion: kuadrant.io/v1
 kind: TLSPolicy
 metadata:
   name: ingress-gateway-tls
