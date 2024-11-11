@@ -107,7 +107,6 @@ curl --resolve api.news.io:443:$INGRESS_IP https://api.news.io/sports --insecure
 
 #### ❹ [Add authentication and authorization to the application](4-auth.md)
 #### ❺ [Add rate limiting to the application](5-rate-limit.md)
-#### ❻ [Deploy the consumer app](6-consumer.md)
 
 <br/>
 

@@ -185,7 +185,6 @@ curl -k --resolve api.news.io:443:$INGRESS_IP -H "Authorization: Bearer $(kubect
 ```
 
 #### ❺ [Add rate limiting to the application](5-rate-limit.md)
-#### ❻ [Deploy the consumer app](6-consumer.md)
 
 <br/>
 
